@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F3D4B"
+    android:backgroundTint="#2F3D4B"
+    android:backgroundTintMode="src_over"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txInicio"
+        android:layout_width="279dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="8dp"
+        android:text="SmartStock Inicio de Sesión"
+        android:textAlignment="center"
+        android:textColor="#E8EAF6"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/etIngresoUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etIngresoUsuario"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="19dp"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/etIngresoContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txInicio" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etIngresoContraseña"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:hint="Contraseña"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIngresoUsuario" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="51dp"
+        android:backgroundTint="#288DC4"
+        android:padding="20dp"
+        android:text="Iniciar Sesión"
+        android:textColor="#E3F2FD"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOlvCtr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIngresoContraseña" />
+
+    <Button
+        android:id="@+id/btnRegUsuario"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:backgroundTint="#288DC4"
+        android:padding="20dp"
+        android:text="Registrar Usuario"
+        android:textColor="#E3F2FD"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGerencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+
+    <Button
+        android:id="@+id/btnGerencia"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="51dp"
+        android:backgroundTint="@color/btn_confirmar"
+        android:padding="20dp"
+        android:text="Contactar Gerencia"
+        android:textColor="#E3F2FD"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOlvCtr" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="130dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+        android:baselineAlignBottom="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txInicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoapp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

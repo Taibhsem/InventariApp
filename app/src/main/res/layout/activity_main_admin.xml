@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2F3D4B"
+        tools:context=".OpcionesActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="34dp"
+            android:baselineAlignBottom="false"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logoapp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="425dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="35dp"
+            android:text="InventariApp Administración"
+            android:textColor="#E3F2FD"
+            android:textSize="61dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAnadirUs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/btnAnadirUs"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="#288DC4"
+            android:text="Añadir Usuario"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/btnModUs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/btnModUs"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="#288DC4"
+            android:text="Editar Usuario"
+            app:layout_constraintBottom_toTopOf="@+id/btnElimUsu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAnadirUs" />
+
+        <Button
+            android:id="@+id/btnElimUsu"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="#288DC4"
+            android:text="Eliminar Usuario"
+            app:layout_constraintBottom_toTopOf="@+id/btnInventario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnModUs" />
+
+        <Button
+            android:id="@+id/btnInventario"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="#288DC4"
+            android:text="Ver Productos"
+            app:layout_constraintBottom_toTopOf="@+id/btnCentroMensajes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnElimUsu" />
+
+        <Button
+            android:id="@+id/btnCentroMensajes"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="7dp"
+            android:backgroundTint="#288DC4"
+            android:text="Centro de Mensajes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnInventario" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

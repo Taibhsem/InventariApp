@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="titulos">#5160B3</color>
+    <color name="todo_background_card">#FF081A4A</color>
+    <color name="todo_subtitle_text">#959595</color>
+
+
+    <color name="btn_img">#215775</color>
+    <color name="btn_eliminar">#9A3A3A</color>
+    <color name="textos">#FFFFFFFF</color>
+    <color name="btn_confirmar">#288DC4</color>
+    <color name ="inventario_background">#2F3D4B</color>
+    <color name="inventario_cojin_category">#FF9800</color>
+    <color name="inventario_tela_category">#00BCD4</color>
+    <color name="inventario_cortina_category">#4CAF50</color>
+
+</resources>

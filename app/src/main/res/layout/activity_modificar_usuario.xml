@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#242C4D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="412dp"
+            android:layout_height="671dp"
+            android:layout_marginTop="60dp"
+            android:background="#2F3D4B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/etModNombre"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#E3F2FD"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:textColorHint="#E3F2FD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="237dp" />
+
+        <EditText
+            android:id="@+id/etModCorreo"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#E3F2FD"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="text"
+            android:textColorHint="#E3F2FD"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="303dp" />
+
+        <EditText
+            android:id="@+id/etModAsigna"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#E3F2FD"
+            android:ems="10"
+            android:hint="Asignación"
+            android:inputType="text"
+            android:textColorHint="#E3F2FD"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="432dp" />
+
+        <EditText
+            android:id="@+id/etModContraActual"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#E3F2FD"
+            android:ems="10"
+            android:hint="Contraseña (Sólo si se va a reemplazar)"
+            android:inputType="textPassword"
+            android:textColorHint="#E3F2FD"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="496dp" />
+
+        <EditText
+            android:id="@+id/etModContraNueva"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#E3F2FD"
+            android:ems="10"
+            android:hint="Contraseña Nueva (Sólo si se reemplaza)"
+            android:inputType="textPassword"
+            android:textColorHint="#E3F2FD"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="559dp" />
+
+        <EditText
+            android:id="@+id/etModConfContra"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#E3F2FD"
+            android:ems="10"
+            android:hint="Confirmar Contraseña (Sólo si se reemplaza)"
+            android:inputType="textPassword"
+            android:textColorHint="#E3F2FD"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="626dp" />
+
+        <EditText
+            android:id="@+id/etModTelefono"
+            android:layout_width="399dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#E3F2FD"
+            android:ems="10"
+            android:hint="Teléfono"
+            android:inputType="text"
+            android:textColorHint="#E3F2FD"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <Button
+            android:id="@+id/btnConfirmoMod"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#288DC4"
+            android:text="Confirmar"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="682dp" />
+
+        <ImageView
+            android:id="@+id/ivUsuarioMod"
+            android:layout_width="120dp"
+            android:layout_height="103dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="70dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#242C4D"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/botonatras" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Editar Usuario"
+            android:textAlignment="center"
+            android:textColor="#E3F2FD"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/cancelar"
+            tools:layout_editor_absoluteX="215dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/anadirimagen"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/abrircamara"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/actualizar"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

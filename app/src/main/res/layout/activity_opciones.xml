@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F3D4B"
+    tools:context=".OpcionesActivity">
+
+    <ImageView
+        android:id="@+id/imgLogoInv"
+        android:layout_width="130dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="16dp"
+        android:baselineAlignBottom="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoapp" />
+
+    <Button
+        android:id="@+id/btnGerencia"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#288DC4"
+        android:text="Contactar Gerencia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInventario" />
+
+    <Button
+        android:id="@+id/btnInventario"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#288DC4"
+        android:text="Ver Productos"
+        app:layout_constraintBottom_toTopOf="@+id/btnGerencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScannerMain" />
+
+    <Button
+        android:id="@+id/btnScannerMain"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#288DC4"
+        android:text="Escanea el codigo"
+        app:layout_constraintBottom_toTopOf="@+id/btnInventario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGeneAnadir" />
+
+    <Button
+        android:id="@+id/btnGeneAnadir"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#288DC4"
+        android:text="Generar QR y Añadir al Inventario"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnScannerMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svProductos" />
+
+    <SearchView
+        android:id="@+id/svProductos"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#E3F2FD"
+        android:hapticFeedbackEnabled="false"
+        android:searchIcon="@drawable/lupa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="58dp"
+        android:text="SmartStock"
+        android:textColor="#E3F2FD"
+        android:textSize="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/svProductos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogoInv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

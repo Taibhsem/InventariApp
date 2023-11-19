@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242C4D">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="409dp"
+        android:layout_height="661dp"
+        android:layout_marginTop="70dp"
+        android:background="#2F3D4B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnGerencia"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#288DC4"
+        android:text="Contactar Gerencia"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="651dp" />
+
+    <Button
+        android:id="@+id/btnConfirmoInfoUsu"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#288DC4"
+        android:text="Confirmar"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="581dp" />
+
+    <ImageView
+        android:id="@+id/ivUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="136dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/btnCamaraUsuario"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/abrircamara"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageButton
+        android:id="@+id/btnAnadirFotoUsuario"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/anadirimagen"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageButton
+        android:id="@+id/btnActualizarFotoUsuario"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/actualizar"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageButton
+        android:id="@+id/btnEliminarFotoUsuario"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/cancelar"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <TextView
+        android:id="@+id/tvNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textColor="#E3F2FD"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/etContNueva"
+        android:layout_width="399dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#E3F2FD"
+        android:ems="10"
+        android:hint="Contraseña Nueva"
+        android:inputType="textPassword"
+        android:textColorHighlight="#E3F2FD"
+        android:textColorHint="#E3F2FD"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <EditText
+        android:id="@+id/etConfContraNueva"
+        android:layout_width="399dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#E3F2FD"
+        android:ems="10"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        android:textColorHighlight="#E3F2FD"
+        android:textColorHint="#E3F2FD"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <EditText
+        android:id="@+id/etContUsuario"
+        android:layout_width="399dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#E3F2FD"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Contraseña Actual"
+        android:inputType="textPassword"
+        android:saveEnabled="false"
+        android:textColorHighlight="#E3F2FD"
+        android:textColorHint="#E3F2FD"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#242C4D"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botonatras" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="Información del Usuario"
+        android:textAlignment="center"
+        android:textColor="#E3F2FD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

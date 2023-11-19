@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inventario_background">
+
+    <ImageButton
+        android:id="@+id/imgBtnAtrasInv"
+        android:layout_width="72dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/inventario_background"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lyRecycler"
+        app:layout_constraintEnd_toStartOf="@id/btnGerencia"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGerencia"
+        android:layout_width="114dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/btn_confirmar"
+        android:text="Gerencia"
+        app:layout_constraintBottom_toTopOf="@+id/lyRecycler"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnAtrasInv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="137dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="InventariApp"
+        android:textAlignment="center"
+        android:textColor="#E3F2FD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFecha"
+        app:layout_constraintEnd_toEndOf="@+id/svProductos"
+        app:layout_constraintStart_toEndOf="@id/btnGerencia"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/svProductos"
+        android:layout_width="54dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:searchIcon="@drawable/lupa"
+        app:layout_constraintBottom_toTopOf="@+id/lyRecycler"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="54dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#2F3D4B"
+        android:src="@drawable/infousuario"
+        app:layout_constraintBottom_toTopOf="@+id/lyRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/svProductos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#E3F2FD"
+        app:layout_constraintEnd_toStartOf="@+id/svProductos"
+        app:layout_constraintStart_toEndOf="@+id/btnGerencia"
+        app:layout_constraintBottom_toTopOf="@+id/lyRecycler"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <LinearLayout
+        android:id="@+id/lyRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFecha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/inventario_background">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvInventario"
+            android:layout_width="414dp"
+            android:layout_height="657dp"
+            android:background="@color/inventario_background"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
